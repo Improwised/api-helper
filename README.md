@@ -17,11 +17,11 @@
     <a href="#table-of-contents"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://packagist.org/packages/lde/api-helper">View Package</a>
+    <a href="https://packagist.org/packages/improwised/api-helper">View Package</a>
     ·
-    <a href="https://github.com/Local-Data-Exchange/api-helper/issues">Report Bug</a>
+    <a href="https://github.com/Improwised/api-helper/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Local-Data-Exchange/api-helper/issues">Request Feature</a>
+    <a href="https://github.com/Improwised/api-helper/issues">Request Feature</a>
   </p>
 </p>
 
@@ -46,11 +46,11 @@ This package is useful to consume API's, here is the instruction for installatio
 
 ## Installation
    
-1. To install this package using [Packagist](https://packagist.org/packages/lde/api-helper)  
+1. To install this package using [Packagist](https://packagist.org/packages/improwised/api-helper)  
 
 2. On the root of your project run following command   
 
-		composer require lde/api-helper
+		composer require improwised/api-helper
 
 3. This command will install package with dependency
   
@@ -58,7 +58,7 @@ This package is useful to consume API's, here is the instruction for installatio
 
 - To use this apihelper need to export config file to do so run the following command in your terminal to publish config file to config folder.
 
-	    php artisan vendor:publish  --provider="Lde\ApiHelper\ApiHelperServiceProvider"
+	    php artisan vendor:publish  --provider="Improwised\ApiHelper\ApiHelperServiceProvider"
 
 - This will publish config file naming **api_helper.php** into config folder.
 
@@ -87,7 +87,7 @@ This package is useful to consume API's, here is the instruction for installatio
 
 - To use this package you need to add following class where you want to use this package.
 
-		use Lde\ApiHelper\ApiBuilder;
+		use Improwised\ApiHelper\ApiBuilder;
 
 		
 ### Methods

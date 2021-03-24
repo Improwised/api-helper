@@ -1,5 +1,5 @@
 <?php
-namespace Lde\ApiHelper;
+namespace Improwised\ApiHelper;
 
 use Illuminate\Support\Facades\Facade;
 

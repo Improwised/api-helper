@@ -1,17 +1,17 @@
 <?php
 
-namespace Lde\ApiHelper;
+namespace Improwised\ApiHelper;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Support\Facades\Log;
 use GuzzleHttp\Cookie\CookieJar;
-use Lde\ApiHelper\ApiResponse;
-use Lde\ApiHelper\Events\ApiCallCompleted;
-use Lde\ApiHelper\Events\ApiCallStarting;
-use Lde\ApiHelper\Helpers\HelperException;
-use Lde\ApiHelper\Helpers\ObfuscationHelper;
-use Lde\ApiHelper\Helpers\StatsHelper;
+use Improwised\ApiHelper\ApiResponse;
+use Improwised\ApiHelper\Events\ApiCallCompleted;
+use Improwised\ApiHelper\Events\ApiCallStarting;
+use Improwised\ApiHelper\Helpers\HelperException;
+use Improwised\ApiHelper\Helpers\ObfuscationHelper;
+use Improwised\ApiHelper\Helpers\StatsHelper;
 use Spatie\ArrayToXml\ArrayToXml;
 
 class ApiBuilder

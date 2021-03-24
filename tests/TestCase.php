@@ -1,6 +1,6 @@
 <?php
 
-namespace Lde\ApiHelper\Tests;
+namespace Improwised\ApiHelper\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 

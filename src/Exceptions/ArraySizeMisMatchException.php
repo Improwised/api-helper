@@ -1,6 +1,6 @@
 <?php
 
-namespace Lde\ApiHelper\Exceptions;
+namespace Improwised\ApiHelper\Exceptions;
 
 use Exception;
 
