@@ -5,6 +5,7 @@ namespace Lde\ApiHelper;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Support\Facades\Log;
+use GuzzleHttp\Cookie\CookieJar;
 use Lde\ApiHelper\ApiResponse;
 use Lde\ApiHelper\Events\ApiCallCompleted;
 use Lde\ApiHelper\Events\ApiCallStarting;
@@ -86,6 +87,24 @@ class ApiBuilder
         return $this;
     }
 
+	/**
+     * Add cookies to request options
+     *
+     * @param array  $cookies
+     * @param string $domain
+     * 
+     *
+     * @return ApiBuilder
+     */
+    public function addCookies(array $cookies,string $domain): ApiBuilder
+    {
+        $cookieJar = CookieJar::fromArray($cookies, $domain);
+        $this->requestOptions['cookies'] = $cookieJar;
+
+        return $this;
+    }
+    
+    
     /**
      * Magic method to call api
      *
