@@ -22,6 +22,19 @@ class ApiBuilderTest extends TestCase
         self::assertEquals($api->requestOptions['headers']['foo'], 'bar');
     }
 
+    public function testCanSetCookies()
+    {
+        $apibuilder = new ApiBuilder();
+        $cookies = ['session' => 'test_user', 'token' => 'abcdefghijklmnopqrstuvwxyz'];
+        $domain = '127.0.0.1';
+        $api = $apibuilder->api('httpbin')->addCookies($cookies, $domain);
+        $jar = $api->requestOptions['cookies'];
+        self::assertEquals(2, count($jar));
+        self::assertNotNull($jar->getCookieByName('session'));
+        self::assertNotNull($jar->getCookieByName('token'));
+        self::assertNull($jar->getCookieByName('invalid'));
+    }
+
     public function testHttpBinGet()
     {
         $apibuilder = new ApiBuilder();
