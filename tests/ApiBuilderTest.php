@@ -1,8 +1,8 @@
 <?php
 
-namespace Lde\ApiHelper\Tests;
+namespace Improwised\ApiHelper\Tests;
 
-use Lde\ApiHelper\ApiBuilder;
+use Improwised\ApiHelper\ApiBuilder;
 
 class ApiBuilderTest extends TestCase
 {

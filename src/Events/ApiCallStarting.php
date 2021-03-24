@@ -1,6 +1,6 @@
 <?php
 
-namespace Lde\ApiHelper\Events;
+namespace Improwised\ApiHelper\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;

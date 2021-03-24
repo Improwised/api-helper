@@ -1,5 +1,5 @@
 {
-    "name": "lde/api-helper",
+    "name": "improwised/api-helper",
     "description": "Laravel package to help consume REST and XML APIs with little effort.",
     "license": "MIT",
     "keywords": [
@@ -19,22 +19,22 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Lde\\ApiHelper\\": "src/"
+            "Improwised\\ApiHelper\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Lde\\ApiHelper\\ApiHelperServiceProvider"
+                "Improwised\\ApiHelper\\ApiHelperServiceProvider"
             ],
             "aliases": {
-                "ApiHelper": "Lde\\ApiHelper\\ApiHelperFacade"
+                "ApiHelper": "Improwised\\ApiHelper\\ApiHelperFacade"
             }
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Lde\\ApiHelper\\Tests\\": "tests"
+            "Improwised\\ApiHelper\\Tests\\": "tests"
         }
     },
     "require-dev": {

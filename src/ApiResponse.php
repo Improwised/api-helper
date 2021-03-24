@@ -1,6 +1,6 @@
 <?php
 
-namespace Lde\ApiHelper;
+namespace Improwised\ApiHelper;
 
 use GuzzleHttp\Psr7\Response;
 

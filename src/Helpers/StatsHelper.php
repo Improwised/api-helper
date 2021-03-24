@@ -1,9 +1,9 @@
 <?php
 
-namespace Lde\ApiHelper\Helpers;
+namespace Improwised\ApiHelper\Helpers;
 
 use Illuminate\Support\Facades\Log;
-use Lde\ApiHelper\Exceptions\ArraySizeMisMatchException;
+use Improwised\ApiHelper\Exceptions\ArraySizeMisMatchException;
 use Prometheus\Exception\MetricNotFoundException;
 use Prometheus\Exception\MetricsRegistrationException;
 
